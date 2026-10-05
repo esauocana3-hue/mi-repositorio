@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.saludo {
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.hero h3 {
+    font-size: 25px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.saludo) {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+.boton {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background: #1d4ed8;
+}
+
+.boton.secundario {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.hero-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    min-width: 280px;
+}
+
+.avatar {
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.hero-card p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.skills {
+    padding: 60px 10%;
+    background: white;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: #f5f7fb;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.skill h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
